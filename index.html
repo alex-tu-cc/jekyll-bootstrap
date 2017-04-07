@@ -1,0 +1,15 @@
+---
+layout: default
+title: test index
+header: test header
+---
+{% include JB/setup %}
+
+<div class="posts-list">
+{% for post in site.posts %}
+    <h2 class="post-title">{{ post.title }}</h2>
+{% end for %}
+</div>
+
+
+
